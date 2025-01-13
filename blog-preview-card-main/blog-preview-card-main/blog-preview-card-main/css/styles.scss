@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "figtree";
+    src: url(../assets/fonts/Figtree.ttf);
+}
+
+$Yellow: hsl(47, 88%, 63%);
+$White: hsl(0, 0%, 100%);
+$Gray-500: hsl(0, 0%, 42%);
+$Gray-950: hsl(0, 0%, 7%);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "figtree", "sans-serif";
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: $Yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card{
+        width: 380px;
+        height: fit-content;
+        background-color: $White;
+        padding: 1rem;
+        border-radius: 0.8rem;
+        .img-content{
+            img{
+                width: 100%;
+                height: auto;
+                border-radius: 0.8rem;
+                
+            }
+        }
+        button{
+            display: inline-block;
+            text-align: center;
+            background-color: $Yellow;
+            padding: 8px 15px;
+            margin-top: 15px;
+            border-radius: 0.3rem;
+            border: none;
+        }
+        h5{
+            margin-top: 10px;
+            font-weight: 600;
+        }
+        h2{
+            margin-top: 15px;
+            &:hover{
+                color: $Yellow;
+            }
+        }
+        p{
+            margin-top: 15px;
+        }
+        footer{
+            display: flex;
+            align-items: center;
+            img{
+                margin-top: 20px;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                object-fit: contain;
+                
+            }
+            h4{
+                margin-left: 0.5rem;
+                padding-top: 12px;
+            }
+        }
+    }
+}
