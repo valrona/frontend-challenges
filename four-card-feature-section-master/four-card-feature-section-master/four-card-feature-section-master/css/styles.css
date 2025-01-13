@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.container {
+  background-color: hsl(0, 0%, 98%);
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 3rem 0;
+}
+.container .content {
+  text-align: center;
+}
+.container .content h4 {
+  font-size: 1.5rem;
+  color: hsl(229, 6%, 66%);
+}
+.container .content h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+.container .card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem auto;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.container .card-container .card {
+  width: 30%;
+  box-shadow: 0px 3px 6px hsl(234, 12%, 34%);
+  border-top: 3px solid;
+  padding: 1.5rem;
+  border-radius: 0.15rem;
+}
+.container .card-container .card h1 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: hsl(234, 12%, 34%);
+}
+.container .card-container .card p {
+  color: hsl(229, 6%, 66%);
+  font-size: 15px;
+  margin-top: 0.5rem;
+}
+.container .card-container .card .img-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+.container .card-container .card .img-container img {
+  width: 50px;
+}
+.container .card-container .card-1, .container .card-container .card-4 {
+  transform: translateY(50%);
+}
+.container .card-container .card-1 {
+  border-top-color: hsl(180, 62%, 55%);
+}
+.container .card-container .card-2 {
+  border-top-color: hsl(0, 78%, 62%);
+}
+.container .card-container .card-3 {
+  order: 4;
+  border-top-color: hsl(34, 97%, 64%);
+}
+.container .card-container .card-4 {
+  order: 3;
+  border-top-color: hsl(212, 86%, 64%);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 3rem 1.2rem;
+  }
+  .container .card-container .card {
+    width: 100%;
+    transform: initial;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .container {
+    padding: 3rem 1.2rem;
+  }
+  .container .card-container {
+    align-items: stretch;
+  }
+  .container .card-container .card {
+    width: 40%;
+    transform: initial;
+  }
+}/*# sourceMappingURL=styles.css.map */
