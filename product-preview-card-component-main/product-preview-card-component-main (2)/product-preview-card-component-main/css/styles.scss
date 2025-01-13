@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+.hanken-grotesk {
+    font-family: "Hanken Grotesk", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .fraunces {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "SOFT" 0,
+      "WONK" 0;
+  }
+
+$Dark-cyan: hsl(158, 36%, 37%);
+$Cream: hsl(30, 38%, 92%);
+$Very-dark-blue: hsl(212, 21%, 14%);
+$Dark-grayish-blue: hsl(228, 12%, 48%);
+$White: white;
+$hover: hsl(158, 33%, 21%);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: $Cream;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card{
+        width: 400px;
+        height: fit-content;
+        background-color: white;
+        border-radius: 0.8rem;
+        overflow: hidden;
+        .img-container{
+            img{
+                width: 100%;
+            }
+        }
+        .content-container{
+            padding: 1rem 1rem;
+            span{
+                letter-spacing: 0.3rem;
+                text-transform: uppercase;
+                font-family: "Hanken Grotesk", serif;
+                color: $Dark-grayish-blue;
+            }
+            h1{
+               font-size: 37px;
+               font-weight: 800;
+            }
+            p{
+                font-family: "Hanken Grotesk", serif;
+                padding: 1rem 0;
+                font-size: 14px;
+                color: $Dark-grayish-blue;
+            }
+            .rate-container{
+                display: flex;
+                align-items: center;
+                h1{
+                    color: $Dark-cyan;
+                    font-family: "Fraunces", serif;
+                }
+                p{
+                    color: $Dark-grayish-blue;
+                    margin-left: 1.5rem;
+                    text-decoration: line-through;
+                }
+            }
+            .btn-container{
+                button{
+                    background-color: $Dark-cyan;
+                    margin-top: 0.5rem;
+                    padding: 15px 5rem;
+                    color: $White;
+                    border: none;
+                    border-radius: 0.6rem;
+                    &:hover{
+                        background-color: $hover;
+                    }
+                }
+            }
+        }
+    }
+}
+

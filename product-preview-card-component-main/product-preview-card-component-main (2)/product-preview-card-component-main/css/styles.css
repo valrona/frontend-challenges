@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+.hanken-grotesk {
+  font-family: "Hanken Grotesk", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.fraunces {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .card {
+  width: 400px;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: white;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+.container .card .img-container img {
+  width: 100%;
+}
+.container .card .content-container {
+  padding: 1rem 1rem;
+}
+.container .card .content-container span {
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  font-family: "Hanken Grotesk", serif;
+  color: hsl(228, 12%, 48%);
+}
+.container .card .content-container h1 {
+  font-size: 37px;
+  font-weight: 800;
+}
+.container .card .content-container p {
+  font-family: "Hanken Grotesk", serif;
+  padding: 1rem 0;
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+}
+.container .card .content-container .rate-container {
+  display: flex;
+  align-items: center;
+}
+.container .card .content-container .rate-container h1 {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+}
+.container .card .content-container .rate-container p {
+  color: hsl(228, 12%, 48%);
+  margin-left: 1.5rem;
+  text-decoration: line-through;
+}
+.container .card .content-container .btn-container button {
+  background-color: hsl(158, 36%, 37%);
+  margin-top: 0.5rem;
+  padding: 15px 8rem;
+  color: white;
+  border: none;
+  border-radius: 0.6rem;
+}
+.container .card .content-container .btn-container button:hover {
+  background-color: hsl(158, 33%, 21%);
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .card {
+  width: 380px;
+  height: 91vh;
+  background-color: white;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+.container .card .img-container img {
+  width: 100%;
+  height: 60%;
+  position: relative;
+}/*# sourceMappingURL=styles.css.map */
